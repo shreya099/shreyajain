@@ -16,23 +16,49 @@
 	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-
+<style type="text/css">
+		#l{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			background: #081010 url('https://cdn.dribbble.com/users/108183/screenshots/3191371/magic_preloader_by_volorf_.gif') no-repeat center;
+			z-index: 999999;
+			bottom:0;
+			
+			
+		}
+			@media screen and (max-width: 500px) and( min-width: 300px){
+			#l{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			background: #081010 url('https://cdn.dribbble.com/users/108183/screenshots/3191371/magic_preloader_by_volorf_.gif') no-repeat center;
+		background-size: 70% 70%;
+			z-index: 999999;
+			bottom:0;
+			
+			
+		}
+	</style>
 
 </head>
 
-<body>
+<body onload="myFunction()">
+		<div id="l">
+			
+		</div>
 
-<!-- Preloader -->
+<!--  Preloader 
 <div id="preloader">
 	<div class="outer">
-		<!-- Google Chrome -->
+		
 		<div class="infinityChrome">
 			<div></div>
 			<div></div>
 			<div></div>
 		</div>
 
-		<!-- Safari and others -->
+		 
 		<div class="infinity">
 			<div>
 				<span></span>
@@ -44,7 +70,7 @@
 				<span></span>
 			</div>
 		</div>
-		<!-- Stuff -->
+		
 		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
 			<defs>
 				<filter id="goo">
@@ -55,7 +81,7 @@
 			</defs>
 		</svg>
 	</div>
-</div>
+</div> -->
 
 <!-- mobile header -->
 <header class="mobile-header-1">
@@ -504,6 +530,11 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+	var preloader=document.getElementById('l');
+	function myFunction(){
+	preloader.style.display= 'none';  }
+	</script>
 
 </body>
 
