@@ -60,6 +60,11 @@ body {
 img {
   max-width: 100%;
   height: auto;
+-moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+  pointer-events: none;
+  user-select: none;
 }
 
 .text-center {
